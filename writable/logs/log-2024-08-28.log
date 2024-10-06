@@ -1,0 +1,1101 @@
+ERROR - 2024-08-28 01:25:28 --> mysqli_sql_exception: Unknown column 'img_produto' in 'field list' in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 01:25:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img_produto' in 'field list'
+[Method: POST, Route: cargarProducto]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (:titulo_producto:, :status:, :img_produto:, :tipo_producto:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 01:25:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img_produto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (:titulo_producto:, :status:, :img_produto:, :tipo_producto:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 01:25:28 --> [Caused by] mysqli_sql_exception: Unknown column 'img_produto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (:titulo_producto:, :status:, :img_produto:, :tipo_producto:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 01:27:54 --> mysqli_sql_exception: Unknown column 'img_produto' in 'field list' in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 01:27:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img_produto' in 'field list'
+[Method: POST, Route: cargarProducto]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (:titulo_producto:, :status:, :img_produto:, :tipo_producto:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 01:27:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img_produto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (:titulo_producto:, :status:, :img_produto:, :tipo_producto:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 01:27:54 --> [Caused by] mysqli_sql_exception: Unknown column 'img_produto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (\'CamisetaNegra\', \'1\', \'images/CamisetaNegra.png\', \'4\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `status`, `img_produto`, `tipo_producto`, `created_at`) VALUES (:titulo_producto:, :status:, :img_produto:, :tipo_producto:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 01:31:20 --> mysqli_sql_exception: Unknown column 'img_produto' in 'field list' in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 01:31:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img_produto' in 'field list'
+[Method: POST, Route: cargarProducto]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (:titulo_producto:, :img_produto:, :tipo_producto:, :status:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 01:31:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'img_produto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (\'CamisetaNegra\', \'images/CamisetaNegra.png\', \'4\', \'1\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (\'CamisetaNegra\', \'images/CamisetaNegra.png\', \'4\', \'1\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (:titulo_producto:, :img_produto:, :tipo_producto:, :status:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 01:31:20 --> [Caused by] mysqli_sql_exception: Unknown column 'img_produto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (\'CamisetaNegra\', \'images/CamisetaNegra.png\', \'4\', \'1\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (\'CamisetaNegra\', \'images/CamisetaNegra.png\', \'4\', \'1\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (\'CamisetaNegra\', \'images/CamisetaNegra.png\', \'4\', \'1\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto` (`titulo_producto`, `img_produto`, `tipo_producto`, `status`, `created_at`) VALUES (:titulo_producto:, :img_produto:, :tipo_producto:, :status:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ProductoModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductoController.php(74): App\Models\ProductoModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 05:58:53 --> BadMethodCallException: Call to undefined method App\Models\ProductoModel::getCamisetas
+[Method: GET, Route: playeras]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\ProductoController.php(19): CodeIgniter\Model->__call('getCamisetas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:04:41 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+[Method: GET, Route: playeras]
+in APPPATH\Models\ProductoModel.php on line 54.
+ 1 APPPATH\Controllers\ProductoController.php(19): App\Models\ProductoModel->getCamisetas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:05:31 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+[Method: GET, Route: playeras]
+in APPPATH\Models\ProductoModel.php on line 54.
+ 1 APPPATH\Controllers\ProductoController.php(19): App\Models\ProductoModel->getCamisetas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:06:37 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+[Method: GET, Route: playeras]
+in APPPATH\Models\ProductoModel.php on line 54.
+ 1 APPPATH\Controllers\ProductoController.php(19): App\Models\ProductoModel->getCamisetas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:14:40 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object]"
+[Method: GET, Route: img/%5Bobject%20Object%5D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object]')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object]')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:14:40 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object].png"
+[Method: GET, Route: img/%5Bobject%20Object%5D.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object].png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object].png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:17:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object].png"
+[Method: GET, Route: img/%5Bobject%20Object%5D.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object].png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object].png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:17:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object]"
+[Method: GET, Route: img/%5Bobject%20Object%5D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object]')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object]')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:25:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object]"
+[Method: GET, Route: img/%5Bobject%20Object%5D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object]')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object]')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:25:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object].png"
+[Method: GET, Route: img/%5Bobject%20Object%5D.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object].png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object].png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:28:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object].png"
+[Method: GET, Route: img/%5Bobject%20Object%5D.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object].png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object].png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 06:28:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "[object Object]"
+[Method: GET, Route: img/%5Bobject%20Object%5D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('img/[object Object]')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('img/[object Object]')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:44:52 --> ErrorException: Undefined variable $propiedad
+[Method: GET, Route: formCliente]
+in APPPATH\Views\clientes\formularioCliente.php on line 98.
+ 1 APPPATH\Views\clientes\formularioCliente.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $propiedad', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\formularioCliente.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\formularioCliente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/formularioCliente', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(22): view('clientes/formularioCliente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:45:09 --> ErrorException: Undefined variable $propiedad
+[Method: GET, Route: formCliente]
+in APPPATH\Views\clientes\formularioCliente.php on line 98.
+ 1 APPPATH\Views\clientes\formularioCliente.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $propiedad', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\formularioCliente.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\formularioCliente.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/formularioCliente', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(22): view('clientes/formularioCliente', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 16:55:23 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 16:55:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:55:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:55:24 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 16:55:51 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 16:55:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:55:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:55:51 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 16:56:39 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 16:56:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:56:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:56:39 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana \', \'Buendia\', \'04121090185\', \'mundo.pc3@gmail.com\', NULL, \'\', \'Feliz Cumpleaños\', \'#4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 16:59:54 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 16:59:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:59:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 16:59:54 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(47): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 17:01:07 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 17:01:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:01:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:01:07 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'erikab644@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 17:01:50 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 17:01:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:01:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:01:50 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 17:05:38 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 17:05:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:05:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:05:38 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Erika Maria\', \'Fernandez Brito\', \'04121090185\', \'fmenabuendia@gmail.com\', NULL, \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', \'2\', \'2024-08-31\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(43): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:13:19 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes\clientes.php on line 53.
+ 1 APPPATH\Views\clientes\clientes.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/clientes', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(14): view('clientes/clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 17:19:58 --> ErrorException: Undefined array key "fecha"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes\clientes.php on line 59.
+ 1 APPPATH\Views\clientes\clientes.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/clientes', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(14): view('clientes/clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:11:39 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+[Method: GET, Route: clientes]
+in APPPATH\Models\ClienteModel.php on line 59.
+ 1 APPPATH\Controllers\ClienteController.php(13): App\Models\ClienteModel->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:13:30 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+[Method: GET, Route: clientes]
+in APPPATH\Models\ClienteModel.php on line 59.
+ 1 APPPATH\Controllers\ClienteController.php(13): App\Models\ClienteModel->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:15:20 --> TypeError: App\Controllers\ClienteController::index(): Return value must be of type string, array returned
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\ClienteController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:15:58 --> ErrorException: Undefined array key "titullo_producto"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes\clientes.php on line 56.
+ 1 APPPATH\Views\clientes\clientes.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titullo_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/clientes', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(15): view('clientes/clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:16:37 --> TypeError: App\Controllers\ClienteController::index(): Return value must be of type string, none returned
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\ClienteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:16:41 --> TypeError: App\Controllers\ClienteController::index(): Return value must be of type string, none returned
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\ClienteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:19:05 --> TypeError: App\Controllers\ClienteController::index(): Return value must be of type string, none returned
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\ClienteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:24:46 --> TypeError: App\Controllers\ClienteController::index(): Return value must be of type string, none returned
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\ClienteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:25:15 --> TypeError: App\Controllers\ClienteController::index(): Return value must be of type string, none returned
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\ClienteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:26:15 --> ErrorException: Undefined array key "titullo_producto"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes\clientes.php on line 56.
+ 1 APPPATH\Views\clientes\clientes.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titullo_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/clientes', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(15): view('clientes/clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 20:34:34 --> ErrorException: Undefined array key "id_producto"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes\clientes.php on line 74.
+ 1 APPPATH\Views\clientes\clientes.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/clientes', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(15): view('clientes/clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 21:20:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cliente/editar.php"
+[Method: GET, Route: editarCliente/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cliente/editar.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cliente/editar', [], true)
+ 3 APPPATH\Controllers\ClienteController.php(63): view('cliente/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 21:20:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cliente/editarCliente.php"
+[Method: GET, Route: editarCliente/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cliente/editarCliente.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cliente/editarCliente', [], true)
+ 3 APPPATH\Controllers\ClienteController.php(63): view('cliente/editarCliente', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 21:22:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cliente/editar.php"
+[Method: GET, Route: editarCliente/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cliente/editar.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cliente/editar', [], true)
+ 3 APPPATH\Controllers\ClienteController.php(63): view('cliente/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 21:24:11 --> ErrorException: Undefined variable $figuraModel
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Controllers\ClienteController.php on line 61.
+ 1 APPPATH\Controllers\ClienteController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $figuraModel', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Controllers\\ClienteController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 21:25:14 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 85.
+ 1 APPPATH\Views\clientes\editar.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 85)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:00:22 --> ErrorException: Undefined array key "titulo_producto"
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 84.
+ 1 APPPATH\Views\clientes\editar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titulo_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:00:56 --> ErrorException: Undefined array key "titulo_producto"
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 84.
+ 1 APPPATH\Views\clientes\editar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titulo_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:01:41 --> ErrorException: Undefined array key "id_producto"
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 84.
+ 1 APPPATH\Views\clientes\editar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:02:16 --> ErrorException: Undefined array key "id_producto"
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 84.
+ 1 APPPATH\Views\clientes\editar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_producto"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:12:48 --> ErrorException: Undefined array key "id_figura"
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 96.
+ 1 APPPATH\Views\clientes\editar.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_figura"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 96)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 23:25:56 --> mysqli_sql_exception: Column 'tipo_figura' cannot be null in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(44): App\Models\ClienteModel->insertar(Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 23:25:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipo_figura' cannot be null
+[Method: POST, Route: cargarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\ClienteController.php(44): App\Models\ClienteModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:25:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipo_figura' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana Ines\', \'Beltran De Los Palotes\', \'04121090185\', \'yosoyproferika@gmail.com\', \'2\', \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', NULL, \'2024-09-07\', \'2024-08-28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana Ines\', \'Beltran De Los Palotes\', \'04121090185\', \'yosoyproferika@gmail.com\', \'2\', \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', NULL, \'2024-09-07\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\ClienteController.php(44): App\Models\ClienteModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:25:56 --> [Caused by] mysqli_sql_exception: Column 'tipo_figura' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana Ines\', \'Beltran De Los Palotes\', \'04121090185\', \'yosoyproferika@gmail.com\', \'2\', \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', NULL, \'2024-09-07\', \'2024-08-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana Ines\', \'Beltran De Los Palotes\', \'04121090185\', \'yosoyproferika@gmail.com\', \'2\', \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', NULL, \'2024-09-07\', \'2024-08-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (\'Juana Ines\', \'Beltran De Los Palotes\', \'04121090185\', \'yosoyproferika@gmail.com\', \'2\', \'erikab644@gmail.com\', \'Feliz Cumpleaños\', \'4\', \'3\', NULL, \'2024-09-07\', \'2024-08-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`nombre_cliente`, `apellido_cliente`, `telefono`, `email`, `status`, `usuario`, `texto`, `numero`, `tipo_producto`, `tipo_figura`, `entrega`, `created_at`) VALUES (:nombre_cliente:, :apellido_cliente:, :telefono:, :email:, :status:, :usuario:, :texto:, :numero:, :tipo_producto:, :tipo_figura:, :entrega:, :created_at:)', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ClienteController.php(44): App\Models\ClienteModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:27:47 --> ErrorException: Undefined array key "entrega"
+[Method: GET, Route: editarCliente/2]
+in APPPATH\Views\clientes\editar.php on line 128.
+ 1 APPPATH\Views\clientes\editar.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entrega"', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(63): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:29:18 --> Error: Call to a member function isValid() on null
+[Method: POST, Route: cargarFigura]
+in APPPATH\Controllers\FiguraController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FiguraController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FiguraController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-28 23:30:23 --> mysqli_sql_exception: Unknown column 'update_at' in 'field list' in C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\personalizacionSis\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `cliente...', 0)
+#1 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente...')
+#2 C:\xampp\htdocs\personalizacionSis\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente...')
+#3 C:\xampp\htdocs\personalizacionSis\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente...', Array, false)
+#4 C:\xampp\htdocs\personalizacionSis\app\Models\ClienteModel.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\personalizacionSis\app\Controllers\ClienteController.php(83): App\Models\ClienteModel->modificar('2', Array)
+#6 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(933): App\Controllers\ClienteController->save()
+#7 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\personalizacionSis\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personalizacionSis\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personalizacionSis\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\personalizacionSis\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-28 23:30:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'update_at' in 'field list'
+[Method: POST, Route: guardarCliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente` SET `nombre_cliente` = :nombre_cliente:, `apellido_cliente` = :apellido_cliente:, `telefono` = :telefono:, `email` = :email:, `status` = :status:, `usuario` = :usuario:, `texto` = :texto:, `numero` = :numero:, `tipo_producto` = :tipo_producto:, `tipo_figura` = :tipo_figura:, `entrega` = :entrega:, `update_at` = :update_at:
+WHERE `id_cliente` = :id_cliente:', [...], false)
+ 2 APPPATH\Models\ClienteModel.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\ClienteController.php(83): App\Models\ClienteModel->modificar('2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:30:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'update_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente` SET `nombre_cliente` = \'Juana Ines\', `apellido_cliente` = \'Beltran De Los Palotes\', `telefono` = \'04121090185\', `email` = \'yosoyproferika@gmail.com\', `status` = \'2\', `usuario` = \'erikab644@gmail.com\', `texto` = \'Feliz Cumpleaños\', `numero` = \'4\', `tipo_producto` = \'3\', `tipo_figura` = NULL, `entrega` = \'\', `update_at` = \'2024-08-28\'
+WHERE `id_cliente` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente` SET `nombre_cliente` = \'Juana Ines\', `apellido_cliente` = \'Beltran De Los Palotes\', `telefono` = \'04121090185\', `email` = \'yosoyproferika@gmail.com\', `status` = \'2\', `usuario` = \'erikab644@gmail.com\', `texto` = \'Feliz Cumpleaños\', `numero` = \'4\', `tipo_producto` = \'3\', `tipo_figura` = NULL, `entrega` = \'\', `update_at` = \'2024-08-28\'
+WHERE `id_cliente` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente` SET `nombre_cliente` = :nombre_cliente:, `apellido_cliente` = :apellido_cliente:, `telefono` = :telefono:, `email` = :email:, `status` = :status:, `usuario` = :usuario:, `texto` = :texto:, `numero` = :numero:, `tipo_producto` = :tipo_producto:, `tipo_figura` = :tipo_figura:, `entrega` = :entrega:, `update_at` = :update_at:
+WHERE `id_cliente` = :id_cliente:', [...], false)
+ 4 APPPATH\Models\ClienteModel.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 5 APPPATH\Controllers\ClienteController.php(83): App\Models\ClienteModel->modificar('2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-28 23:30:23 --> [Caused by] mysqli_sql_exception: Unknown column 'update_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `cliente` SET `nombre_cliente` = \'Juana Ines\', `apellido_cliente` = \'Beltran De Los Palotes\', `telefono` = \'04121090185\', `email` = \'yosoyproferika@gmail.com\', `status` = \'2\', `usuario` = \'erikab644@gmail.com\', `texto` = \'Feliz Cumpleaños\', `numero` = \'4\', `tipo_producto` = \'3\', `tipo_figura` = NULL, `entrega` = \'\', `update_at` = \'2024-08-28\'
+WHERE `id_cliente` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente` SET `nombre_cliente` = \'Juana Ines\', `apellido_cliente` = \'Beltran De Los Palotes\', `telefono` = \'04121090185\', `email` = \'yosoyproferika@gmail.com\', `status` = \'2\', `usuario` = \'erikab644@gmail.com\', `texto` = \'Feliz Cumpleaños\', `numero` = \'4\', `tipo_producto` = \'3\', `tipo_figura` = NULL, `entrega` = \'\', `update_at` = \'2024-08-28\'
+WHERE `id_cliente` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente` SET `nombre_cliente` = \'Juana Ines\', `apellido_cliente` = \'Beltran De Los Palotes\', `telefono` = \'04121090185\', `email` = \'yosoyproferika@gmail.com\', `status` = \'2\', `usuario` = \'erikab644@gmail.com\', `texto` = \'Feliz Cumpleaños\', `numero` = \'4\', `tipo_producto` = \'3\', `tipo_figura` = NULL, `entrega` = \'\', `update_at` = \'2024-08-28\'
+WHERE `id_cliente` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente` SET `nombre_cliente` = :nombre_cliente:, `apellido_cliente` = :apellido_cliente:, `telefono` = :telefono:, `email` = :email:, `status` = :status:, `usuario` = :usuario:, `texto` = :texto:, `numero` = :numero:, `tipo_producto` = :tipo_producto:, `tipo_figura` = :tipo_figura:, `entrega` = :entrega:, `update_at` = :update_at:
+WHERE `id_cliente` = :id_cliente:', [...], false)
+ 5 APPPATH\Models\ClienteModel.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\ClienteController.php(83): App\Models\ClienteModel->modificar('2', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

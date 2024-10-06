@@ -1,0 +1,192 @@
+CRITICAL - 2024-09-07 03:59:05 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: playeras]
+in APPPATH\Views\dashboard\playeras.php on line 75.
+ 1 APPPATH\Views\dashboard\playeras.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/playeras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(29): view('dashboard/playeras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 04:30:53 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: playeras]
+in APPPATH\Views\dashboard\playeras.php on line 75.
+ 1 APPPATH\Views\dashboard\playeras.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/playeras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(29): view('dashboard/playeras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 04:32:41 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: playeras]
+in APPPATH\Views\dashboard\playeras.php on line 75.
+ 1 APPPATH\Views\dashboard\playeras.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/playeras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(29): view('dashboard/playeras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 04:36:41 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: playeras]
+in APPPATH\Views\dashboard\playeras.php on line 75.
+ 1 APPPATH\Views\dashboard\playeras.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/playeras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(29): view('dashboard/playeras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 05:21:33 --> ErrorException: Undefined variable $figura
+[Method: GET, Route: playeras]
+in APPPATH\Views\dashboard\playeras.php on line 43.
+ 1 APPPATH\Views\dashboard\playeras.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $figura', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/playeras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(29): view('dashboard/playeras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 05:21:40 --> ErrorException: Undefined variable $figura
+[Method: GET, Route: playeras]
+in APPPATH\Views\dashboard\playeras.php on line 43.
+ 1 APPPATH\Views\dashboard\playeras.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $figura', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\playeras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/playeras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(29): view('dashboard/playeras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->playera()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 18:47:19 --> ErrorException: Undefined variable $figuras
+[Method: GET, Route: gorras]
+in APPPATH\Views\dashboard\gorras.php on line 65.
+ 1 APPPATH\Views\dashboard\gorras.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $figuras', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/gorras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(34): view('dashboard/gorras')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:37:05 --> ErrorException: Undefined variable $camisetas
+[Method: GET, Route: gorras]
+in APPPATH\Views\dashboard\gorras.php on line 118.
+ 1 APPPATH\Views\dashboard\gorras.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $camisetas', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/gorras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(37): view('dashboard/gorras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:37:18 --> ErrorException: Undefined variable $camisetas
+[Method: GET, Route: gorras]
+in APPPATH\Views\dashboard\gorras.php on line 118.
+ 1 APPPATH\Views\dashboard\gorras.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $camisetas', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/gorras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(37): view('dashboard/gorras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:37:50 --> ErrorException: Undefined variable $camisetas
+[Method: GET, Route: gorras]
+in APPPATH\Views\dashboard\gorras.php on line 118.
+ 1 APPPATH\Views\dashboard\gorras.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $camisetas', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/gorras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(37): view('dashboard/gorras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:39:23 --> ErrorException: Undefined variable $camisetas
+[Method: GET, Route: paraguas]
+in APPPATH\Views\dashboard\paraguas.php on line 118.
+ 1 APPPATH\Views\dashboard\paraguas.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $camisetas', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\paraguas.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\paraguas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/paraguas', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(44): view('dashboard/paraguas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->paragua()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:40:43 --> ErrorException: Undefined variable $camisetas
+[Method: GET, Route: gorras]
+in APPPATH\Views\dashboard\gorras.php on line 118.
+ 1 APPPATH\Views\dashboard\gorras.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $camisetas', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/gorras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(37): view('dashboard/gorras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:48:16 --> ErrorException: Undefined variable $camisetas
+[Method: GET, Route: gorras]
+in APPPATH\Views\dashboard\gorras.php on line 118.
+ 1 APPPATH\Views\dashboard\gorras.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $camisetas', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\personalizacionSis\\app\\Views\\dashboard\\gorras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('dashboard/gorras', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(37): view('dashboard/gorras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 19:51:30 --> ErrorException: Undefined variable $data
+[Method: GET, Route: gorras]
+in APPPATH\Controllers\ProductoController.php on line 36.
+ 1 APPPATH\Controllers\ProductoController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\personalizacionSis\\app\\Controllers\\ProductoController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductoController->gorra()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
